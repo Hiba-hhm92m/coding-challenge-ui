@@ -1,0 +1,42 @@
+
+<div>
+  <section class="content-header">
+    <h1>Tasks</h1>
+  </section>
+  <section class="">
+    <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Is Completed</th>
+                  <th>Created At</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let task of tasks">
+                  <td>{{ task.title }}</td>
+                  <td *ngIf="task.isCompleted" class="completed">Completed</td>
+                  <td *ngIf="!task.isCompleted" class="not-completed">Not Completed</td>
+                  <td>
+                    {{ task.createdAt | date: 'dd/MM/yyyy'}}
+                  </td>
+                  <td>
+                    <button type="button"
+                    class="btn btn-sm bg-secondary"
+                    [routerLink]="['/task/',task.id]">
+                    <i class="fas fa-pencil-alt"></i>
+                    View
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    </div>
+    
+  </section>
+</div>
+   
+
+

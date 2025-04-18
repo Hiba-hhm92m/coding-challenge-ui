@@ -1,0 +1,29 @@
+
+
+
+.content-header {
+    padding: 15px .5rem;
+    justify-items: center;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    text-align: left;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.completed {
+    color: green;
+}
+
+.not-completed {
+    color: red;
+}
