@@ -51,6 +51,9 @@
         <label class="col-label">
           {{task.dueDate | date: 'dd/MM/yyyy'}}
         </label> 
+        <label class="col-label dueDate">
+          {{calculateDiff(task.dueDate)}}  days remaining
+        </label> 
      </div> 
 
      </div>  
