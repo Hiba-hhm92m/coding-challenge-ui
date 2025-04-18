@@ -1,10 +1,78 @@
 
 <div>
   <section class="content-header">
-    <h1>Tasks</h1>
+    <h1>Task Details</h1>
   </section>
-  <section class="content px-2">
-    
+  <section class="content">
+    <div class="card">
+      <div class="card-body">
+
+        <div class="item">
+          <label class="col-label">
+            Title: 
+          </label> 
+          <label class="col-label">
+            {{task.title}}
+          </label> 
+       </div>  
+
+       <div class="item">
+        <label class="col-label">
+          Completed: 
+        </label> 
+        <label *ngIf="task.isCompleted" class="col-label completed">
+          Completed
+        </label> 
+        <label *ngIf="!task.isCompleted" class="col-label not-completed">
+          Not Completed
+        </label> 
+       </div>
+
+     </div>  
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+
+       
+        <div class="item">
+          <label class="col-label">
+            Created At: 
+          </label> 
+          <label class="col-label">
+            {{task.createdAt | date: 'dd/MM/yyyy'}}
+          </label> 
+       </div> 
+  
+       <div class="item">
+        <label class="col-label">
+          Due Date: 
+        </label> 
+        <label class="col-label">
+          {{task.dueDate | date: 'dd/MM/yyyy'}}
+        </label> 
+     </div> 
+
+     </div>  
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+       <div class="item">
+        <label class="col-label">
+          Description: 
+        </label> 
+        <div>
+          <label class="col-label">
+            {{task.description}}
+          </label> 
+        </div>
+
+       </div>
+
+     </div>  
+    </div>
+
   </section>
 </div>
    

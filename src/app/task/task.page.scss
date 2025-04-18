@@ -1,0 +1,39 @@
+.content-header {
+    padding: 15px .5rem;
+    justify-items: center;
+}
+
+.content {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.card {
+    box-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2);
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+    margin-bottom: 5px;
+}
+
+.col-label {
+    padding-left: 10px;
+}
+.completed {
+    color: green;
+}
+
+.not-completed {
+    color: red;
+}

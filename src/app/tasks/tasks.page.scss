@@ -6,6 +6,11 @@
     justify-items: center;
 }
 
+.content {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .table-responsive {
     display: block;
     width: 100%;
@@ -16,8 +21,6 @@
 
 .table {
     width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 .completed {
